@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "usini_sensors")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/usini_kicad_sensors-main/usini_sensors.pretty")(options "")(descr ""))
+  (lib (name "HDC1080")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/HDC1080")(options "")(descr ""))
+  (lib (name "LM2596")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/LM2596")(options "")(descr ""))
+  (lib (name "Guilherme")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/6.0/footprints/Guilherme.pretty")(options "")(descr ""))
+)
