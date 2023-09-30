@@ -1,5 +1,4 @@
 <h1 align="center" style="color:white; background-color:black">CubeSatSim</h1>
-<h4 align="center">This is an Open Hardware and Software CubeSat developed by Zenith EESC-USP for the OBSAT 2023.</h4>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
@@ -31,66 +30,56 @@
     </a>
 </p>
 
-Aiming to participate in the first CubeDesign in 2018, Zenith designed its first nanosatellite prototype, which was named ”ZenSat”. This project was a 2U CubeSat for imaging missions in the competition. It is worth mentioning that the focus of the project was not to validate a nanosatellite for flight but to enable a first contact between the group members and the development of a nanosatellite.
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/block-diagram.jpg?raw=true"/>
+<img src=""/> 
 </p>
 
-<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/ADC%20-%20Attitude%20Determination%20and%20Control"><h2> ADC - Attitude Determination and Control </h2></a>
-The entire stabilization and pointing system must be done necessary to fulfill the competition missions. For this, the reading is done necessary sensors, activating a reaction wheel, which, by means of the Law of Conservation of Angular Momentum, manages to act in the attitude of the satellite.
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/ADC%20-%20Attitude%20Determination%20and%20Control"><h2> Controle </h2></a>
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/adc.PNG?raw=true"/>
+<img src=""/>
 </p>
 
-
-<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>COM - Command and Telemetry</h2></a>
-It is responsible by the bidirectional telemetry in cubesat. This System has two LoRa radios, which communicate with the CTRL Subsystem
+ESP32 DevKit V1 (30 pinos)
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/antena.PNG?raw=true"/>
+<img src=""/>
 </p>
 
-<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>CTRL - Control</h2></a>
-The Control System is the main component of the project. This system is responsible for data analysis, decision making and controlling the others systems
+Raspberry Pi Zero
+
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/diagrama%20Geral.PNG?raw=true"/>
+<img src=""/>
 </p>
 
 
-<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/PS%20-%20Power%20Supply"><h2>PS - Power Supply</h2></a>
-Ensures the monitoring and control of EPS panel parameters,
-that is, it performs the measurement of voltage and current levels at various points on the CubeSat;
-monitors the temperature of the batteries and acts to keep it always positive, in addition to
-carry out communication with other subsystems.
-Also it performs conversions of battery voltage levels to the levels requested within the
-hardware, making the necessary distribution, as well as controlling the loading of batteries through solar panels.
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>Comunicação e Sensoriamento</h2></a>
+E32-433T20DC Módulo LoRa
+
+IMU6050 - Acelerômetro e Giroscópio
+BMP280 - Sensor de pressão e temperatura
+HDC1080 - Sensor de temperatura e umidade
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/eps.PNG?raw=true"/>
+<img src=""/>
 </p>
 
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>Energia</h2></a>
 
-<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/STT%20-%20Structure"><h2> STT - Structure </h2></a>
-Finally, we have the subsystem responsible for the physical integration of all
-the subsystems described earlier. All manufacturing issues involving
-the physical structure of ZenSat is the responsibility of the structures subsystem. The
-determination of the materials used, the choice of manufacturing processes and display of all components, aiming at a satisfactory performance in the
-vibration, are the main focuses of this subsystem
+LM2546 - Conversor Buck (3.3V)
+LED  para indicar 3.3V
+XL6009E1 - Conversor Boost (5V)
+LED  para indicar 5V
+TP4056 - Carregador da bateria
+INA219 - Sensor de corrente e tensão DC
+Conector Borne para a bateria
+Bateria de Litio (3.7V)
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/simula%C3%A7%C3%A3o.PNG?raw=true"/>
+<img src=""/>
 </p>
 
-
-## Official Documentation
-
-Check out the official documentation [here](https://github.com/zenitheesc/ZenSat_1.0/blob/master/ZenSat%20v.1.0.pdf).
-
-<p align = "center">
-<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/render.png?raw=true" alt="drawing" width="800" align="center"/>
-</p>
 
 
 <p align="center">
