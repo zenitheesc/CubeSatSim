@@ -1,54 +1,108 @@
-# CubeSatSim
+<h1 align="center" style="color:white; background-color:black">CubeSatSim</h1>
+<h4 align="center">This is an Open Hardware and Software CubeSat developed by Zenith EESC-USP for the OBSAT 2023.</h4>
 
-The CubeSat Simulator https://github.com/alanbjohnston/CubeSatSim/wiki is a low cost satellite emulator that runs on solar panels and batteries, transmits UHF radio telemetry, has a 3D printed frame, and can be extended by additional sensors and modules.  This project is sponsored by the not-for-profit [Radio Amateur Satellite Corporation, AMSAT®](https://amsat.org).
+<p align="center">
+	<a href="http://zenith.eesc.usp.br/">
+    <img src="https://img.shields.io/badge/Zenith-Embarcados-black?style=for-the-badge"/>
+    </a>
+    <a href="https://eesc.usp.br/">
+    <img src="https://img.shields.io/badge/Linked%20to-EESC--USP-black?style=for-the-badge"/>
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/zenitheesc/USPSat-AE1?style=for-the-badge"/>
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/issues">
+    <img src="https://img.shields.io/github/issues/zenitheesc/USPSat-AE1?style=for-the-badge"/>
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/commits/main">
+    <img src="https://img.shields.io/github/commit-activity/m/zenitheesc/USPSat-AE1?style=for-the-badge">
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/zenitheesc/USPSat-AE1?style=for-the-badge"/>
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/commits/main">
+    <img src="https://img.shields.io/github/last-commit/zenitheesc/USPSat-AE1?style=for-the-badge"/>
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/issues">
+    <img src="https://img.shields.io/github/issues-raw/zenitheesc/USPSat-AE1?style=for-the-badge" />
+    </a>
+    <a href="https://github.com/zenitheesc/USPSat-AE1/pulls">
+    <img src = "https://img.shields.io/github/issues-pr-raw/zenitheesc/USPSat-AE1?style=for-the-badge">
+    </a>
+</p>
 
-There are several hardware versions and software branches to go with them - see below for information.
+Aiming to participate in the first CubeDesign in 2018, Zenith designed its first nanosatellite prototype, which was named ”ZenSat”. This project was a 2U CubeSat for imaging missions in the competition. It is worth mentioning that the focus of the project was not to validate a nanosatellite for flight but to enable a first contact between the group members and the development of a nanosatellite.
 
-See the Wiki Software Install page for more details: https://github.com/alanbjohnston/CubeSatSim/wiki/2.-Software-Install. The software runs on any Raspberry Pi including the Raspberry Pi 4B, 3B, 3B+, Pi Zero, Pi Zero W, or Pi Zero 2 W.
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/block-diagram.jpg?raw=true"/>
+</p>
 
-There are two ways to get the CubeSatSim software for your Pi.
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/ADC%20-%20Attitude%20Determination%20and%20Control"><h2> ADC - Attitude Determination and Control </h2></a>
+The entire stabilization and pointing system must be done necessary to fulfill the competition missions. For this, the reading is done necessary sensors, activating a reaction wheel, which, by means of the Law of Conservation of Angular Momentum, manages to act in the attitude of the satellite.
 
-One option is to download the disk image file and write it to a 16GB micro SD card or larger.  The image is based on Raspberry Pi OS (Rasbian) Lite, dated December 2020. All software is installed, you just need to login to change your password and set your amateur radio callsign if you have one.  You can run the ./update.sh script to update all packages and update and compile the latest CubeSatSim software.
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/adc.PNG?raw=true"/>
+</p>
 
-The other option is to start with a Raspberry Pi OS (Rasbian) image (Bullseye or Buster works) and run the installation script ./install.sh which will install and compile all the related software.  This includes the following packages:
-- wiringpi
-- git
-- libasound2-dev
-- pi-power-button
-- Direwolf
-- rpitx
-- python3-pip 
-- python3-smbus
 
-## Disk Image Option Steps
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>COM - Command and Telemetry</h2></a>
+It is responsible by the bidirectional telemetry in cubesat. This System has two LoRa radios, which communicate with the CTRL Subsystem
 
-See the Wiki Software Install page for details: https://github.com/alanbjohnston/CubeSatSim/wiki/2.-Software-Install.
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/antena.PNG?raw=true"/>
+</p>
 
-## Installation Script Option Steps
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/COM%20-%20Command%20and%20Telemetry"><h2>CTRL - Control</h2></a>
+The Control System is the main component of the project. This system is responsible for data analysis, decision making and controlling the others systems
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/diagrama%20Geral.PNG?raw=true"/>
+</p>
 
-CubeSatSim runs on the Bullseye or Buster version of Raspberry Pi OS (Desktop or Lite), although a Pi Zero or Pi Zero W should only run Lite.  Your Pi will need to have internet access to update settings and install packages.  
 
-To get the software follow these steps:
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/PS%20-%20Power%20Supply"><h2>PS - Power Supply</h2></a>
+Ensures the monitoring and control of EPS panel parameters,
+that is, it performs the measurement of voltage and current levels at various points on the CubeSat;
+monitors the temperature of the batteries and acts to keep it always positive, in addition to
+carry out communication with other subsystems.
+Also it performs conversions of battery voltage levels to the levels requested within the
+hardware, making the necessary distribution, as well as controlling the loading of batteries through solar panels.
 
-`sudo apt-get install -y git`
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/eps.PNG?raw=true"/>
+</p>
 
-`git clone http://github.com/alanbjohnston/CubeSatSim.git`
 
-`cd CubeSatSim`
+<a href="https://github.com/zenitheesc/ZenSat_1.0/tree/master/STT%20-%20Structure"><h2> STT - Structure </h2></a>
+Finally, we have the subsystem responsible for the physical integration of all
+the subsystems described earlier. All manufacturing issues involving
+the physical structure of ZenSat is the responsibility of the structures subsystem. The
+determination of the materials used, the choice of manufacturing processes and display of all components, aiming at a satisfactory performance in the
+vibration, are the main focuses of this subsystem
 
-`git checkout master`
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/simula%C3%A7%C3%A3o.PNG?raw=true"/>
+</p>
 
-You are now ready to install the software using this script in the CubeSatSim directory:
 
-`./install`
+## Official Documentation
 
-The installation script will run for quite a while.  You will get prompted for your amateur radio callsign in all capitals, if you have one.  If you don't you can put some other word which will be transmitted as a CW ID.  You will also be prompted for your latitude and longitude for APRS packets. The script will prompt you if you want to modify /boot/config.txt file.  Type a `y` and the script will complete.  You will need to reboot.
+Check out the official documentation [here](https://github.com/zenitheesc/ZenSat_1.0/blob/master/ZenSat%20v.1.0.pdf).
 
-See the Wiki for more details about the CubeSatSim https://github.com/alanbjohnston/CubeSatSim/wiki
+<p align = "center">
+<img src="https://github.com/zenitheesc/ZenSat_1.0/blob/master/IMAGES/render.png?raw=true" alt="drawing" width="800" align="center"/>
+</p>
 
-Older Versions
 
-There are several versions of the hardware and software to go with them:
+<p align="center">
+    <a href="http://zenith.eesc.usp.br">
+    <img src="https://img.shields.io/badge/Check%20out-Zenith's Oficial Website-black?style=for-the-badge" />
+    </a> 
+    <a href="https://www.facebook.com/zenitheesc">
+    <img src="https://img.shields.io/badge/Like%20us%20on-facebook-blue?style=for-the-badge"/>
+    </a> 
+    <a href="https://www.instagram.com/zenith_eesc/">
+    <img src="https://img.shields.io/badge/Follow%20us%20on-Instagram-red?style=for-the-badge"/>
+    </a>
 
-- The original design used a Digital Transceiver Board for the Raspberry Pi (DigitalTxRxRPi) and APRS AFSK 1200 bps telemetry only.  Use the aprs-digitaltxrx branch https://github.com/alanbjohnston/CubeSatSim/tree/aprs-digitaltxrx for this and the vB2 wiki page https://github.com/alanbjohnston/CubeSatSim/wiki/vB2-Home (e.g. run `git checkout aprs-digitaltxrx` before running the ./install.sh script)
-- An updated design that used the Transmitter/Filter Board (TFB) instead of the the Transceiver Board.  For the same APRS AFSK telemetry, use the aprs-rpitx branch https://github.com/alanbjohnston/CubeSatSim/tree/aprs-rpitx and the vB3 wiki page https://github.com/alanbjohnston/CubeSatSim/wiki/vB3-Home. (e.g. run `git checkout aprs-rpitx` before running the ./install.sh script) Note that this hardware can still use the master code branch.
+</p>
+<p align = "center">
