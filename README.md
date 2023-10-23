@@ -55,7 +55,7 @@ E32-433T20D - Módulo RF Wireless LoRa 433MHZ (comunicação UART)
 
 <a href="https://github.com/zenitheesc/CubeSatSim/tree/ZenithSatSim#energia"><h2>Energia</h2></a>
 
-LM2546 - Conversor Buck (3.3V)
+LM2596 - Conversor Buck (3.3V)
 
 LED  para indicar 3.3V
 
