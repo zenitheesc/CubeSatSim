@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "usini_sensors")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/usini_kicad_sensors-main/usini_sensors.pretty")(options "")(descr ""))
+  (lib (name "E32-xxxT20D")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/42CrMo4-KiCad-Library-master/42CrMo4-KiCad-Library-master/footprints/E32-xxxT20D.pretty")(options "")(descr ""))
+  (lib (name "Logos")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/Logos")(options "")(descr ""))
+)
