@@ -1,5 +1,0 @@
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@lxterminal --command "/home/pi/CubeSatSim/groundstation/fox-startup.sh" 
-@xscreensaver -no-splash
-
