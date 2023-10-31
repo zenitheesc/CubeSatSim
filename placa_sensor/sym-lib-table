@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "usini_sensors")(type "KiCad")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/usini_kicad_sensors-main/usini_sensors.kicad_sym")(options "")(descr ""))
-  (lib (name "E32-xxxT20D")(type "Legacy")(uri "C:/Users/gui_l/OneDrive/Documentos/KiCad/Zenith/Placas OBSat/New board - 1/42CrMo4-KiCad-Library-master/42CrMo4-KiCad-Library-master/Symbols/E32-xxxT20D.lib")(options "")(descr ""))
-)
